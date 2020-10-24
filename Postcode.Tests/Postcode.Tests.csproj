@@ -24,9 +24,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="PostcodeIO\mocks\success.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
+      <None Remove="PostcodeIO\mocks\success.json" />
+      <Content Include="PostcodeIO\mocks\success.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

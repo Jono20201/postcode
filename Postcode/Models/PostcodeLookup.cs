@@ -20,7 +20,7 @@
         public string District { get; set; }
         public string Country { get; set; }
 
-        public string Eastings { get; set; }
-        public string Northings { get; set; }
+        public int Eastings { get; set; }
+        public int Northings { get; set; }
     }
 }
