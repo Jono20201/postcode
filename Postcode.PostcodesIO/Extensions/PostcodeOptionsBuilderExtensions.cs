@@ -1,12 +1,29 @@
 using System;
+using Postcode.PostcodesIO.Options;
 
 namespace Postcode.PostcodesIO.Extensions
 {
     public static class PostcodeOptionsBuilderExtensions
     {
-        static PostcodeOptionsBuilder AddPostcodeIO(this PostcodeOptionsBuilder builder)
+        static PostcodeServiceOptions AddPostcodeIO(this PostcodeServiceOptions builder)
         {
-            throw new NotImplementedException();
-        } 
+            builder.RegisterProvider(new PostcodesIoClient(new PostcodeIoOptions()));
+
+            return builder;
+        }
+
+        static PostcodeServiceOptions AddPostcodeIO(
+            this PostcodeServiceOptions builder,
+            Action<PostcodeIoOptions> configureOptions
+        )
+        {
+            var options = new PostcodeIoOptions();
+
+            configureOptions(options);
+
+            builder.RegisterProvider(new PostcodesIoClient(options));
+
+            return builder;
+        }
     }
 }
