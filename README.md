@@ -1,0 +1,1 @@
+This is a WIP hobby project to add a layer of abstraction in front of various API based postcode lookup services.
