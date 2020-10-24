@@ -1,0 +1,39 @@
+{
+  "status": 200,
+  "result": {
+    "postcode": "SW1W 9SJ",
+    "quality": 1,
+    "eastings": 528818,
+    "northings": 178918,
+    "country": "England",
+    "nhs_ha": "London",
+    "longitude": -0.145769,
+    "latitude": 51.494538,
+    "european_electoral_region": "London",
+    "primary_care_trust": "Westminster",
+    "region": "London",
+    "lsoa": "Westminster 023E",
+    "msoa": "Westminster 023",
+    "incode": "9SJ",
+    "outcode": "SW1W",
+    "parliamentary_constituency": "Cities of London and Westminster",
+    "admin_district": "Westminster",
+    "parish": "Westminster, unparished area",
+    "admin_county": null,
+    "admin_ward": "Warwick",
+    "ced": null,
+    "ccg": "NHS Central London (Westminster)",
+    "nuts": "Westminster",
+    "codes": {
+      "admin_district": "E09000033",
+      "admin_county": "E99999999",
+      "admin_ward": "E05000647",
+      "parish": "E43000236",
+      "parliamentary_constituency": "E14000639",
+      "ccg": "E38000031",
+      "ccg_id": "09A",
+      "ced": "E99999999",
+      "nuts": "UKI32"
+    }
+  }
+}
